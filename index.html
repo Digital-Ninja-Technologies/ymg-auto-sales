@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YMG Auto Sales — Anything on wheels</title>
+<meta name="description" content="Brand new and foreign-used cars in Lagos, Nigeria. Honest pricing, flexible payment plans, and nationwide delivery from YMG Auto Sales, Anthony, Lagos.">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <img src="assets/logo.jpg" alt="YMG Auto Sales" width="42" height="42">
+      <span class="brand-text">
+        <span class="brand-name">YMG Auto Sales</span>
+        <span class="brand-tag">Anything on wheels</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#inventory">Inventory</a>
+      <a href="#how">How it works</a>
+      <a href="#delivery">Delivery</a>
+      <a href="#sell">Sell your car</a>
+      <a href="#contact">Visit us</a>
+    </nav>
+
+    <a href="tel:+2348022288837" class="call-btn">0802 228 8837</a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 1H18" stroke="#15130F" stroke-width="2"/>
+        <path d="M0 7H18" stroke="#15130F" stroke-width="2"/>
+        <path d="M0 13H18" stroke="#15130F" stroke-width="2"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<section id="top" class="hero wrap">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <div class="badge-line">
+        <span class="badge-dot"></span>
+        4.7★ from 104 Google reviews · Anthony, Lagos
+      </div>
+      <h1>Drive your dream car home this week.</h1>
+      <p>Brand new and foreign-used cars, checked and ready. Flexible payment plans, honest pricing, and delivery to any state in Nigeria.</p>
+      <div class="hero-actions">
+        <a href="#inventory" class="btn btn-solid">Browse inventory</a>
+        <a href="https://wa.me/2348022288837" class="btn btn-outline">Chat on WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="hero-media-inner">
+        <video class="hero-fleet" poster="assets/hero.jpg"
+               autoplay muted loop playsinline preload="metadata"
+               aria-label="YMG Auto Sales lot, full of cars for sale">
+          <source src="assets/hero.webm" type="video/webm">
+          <source src="assets/hero.mp4" type="video/mp4">
+        </video>
+        <img src="assets/logo.jpg" alt="YMG Auto Sales" class="hero-badge">
+      </div>
+    </div>
+  </div>
+
+  <div class="search-bar">
+    <label class="field">Make
+      <input placeholder="Any make">
+    </label>
+    <label class="field">Body type
+      <input placeholder="Sedan, SUV, Bus">
+    </label>
+    <label class="field">Budget
+      <input placeholder="Up to ₦40m">
+    </label>
+    <a href="#inventory" class="btn-solid search-submit">Search cars</a>
+  </div>
+</section>
+
+<section class="stats-section wrap">
+  <div class="stats-grid">
+    <div><div class="stat-num">7 yrs</div><div class="stat-label">Selling in Lagos since 2018</div></div>
+    <div><div class="stat-num">36 states</div><div class="stat-label">Nationwide delivery</div></div>
+    <div><div class="stat-num">150+ pt</div><div class="stat-label">Inspection on every car</div></div>
+    <div><div class="stat-num">4.7★</div><div class="stat-label">104 Google reviews</div></div>
+  </div>
+</section>
+
+<section id="inventory" class="inventory wrap">
+  <div class="inventory-head">
+    <div>
+      <h2 class="section-title">On the lot right now</h2>
+      <p>Fresh stock across sedans, SUVs and buses. All checked, all ready to drive.</p>
+    </div>
+    <div class="filters" id="filters"></div>
+  </div>
+  <div class="cars-grid" id="cars-grid"></div>
+</section>
+
+<section class="why-section">
+  <div class="wrap why-inner">
+    <h2 class="section-title">Why people buy from YMG</h2>
+    <p class="why-intro">We have been on Ikorodu Road since 2018. Most of our customers come back, or send a friend.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <h3>Checked before it is listed</h3>
+        <p>Every car goes through our workshop for engine, body and electrical checks before it reaches the lot.</p>
+      </div>
+      <div class="why-card">
+        <h3>Honest, fixed pricing</h3>
+        <p>The price you see is the price we discuss. No hidden charges added at the point of payment.</p>
+      </div>
+      <div class="why-card">
+        <h3>Flexible payment plans</h3>
+        <p>Part payment and spread plans available on selected cars. Talk to us about what works for you.</p>
+      </div>
+      <div class="why-card">
+        <h3>We service what we sell</h3>
+        <p>Our own workshop handles servicing, body work and upgrades long after you drive out.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="how-section wrap">
+  <h2 class="section-title">Four steps to your keys</h2>
+  <div class="how-grid">
+    <div class="how-card">
+      <div class="how-num">01</div>
+      <h3>Tell us your budget</h3>
+      <p>Send a message with what you want to spend and what you drive today.</p>
+    </div>
+    <div class="how-card">
+      <div class="how-num">02</div>
+      <h3>We shortlist cars</h3>
+      <p>We send photos, videos and full history for the cars that fit.</p>
+    </div>
+    <div class="how-card">
+      <div class="how-num">03</div>
+      <h3>Inspect and test drive</h3>
+      <p>Come to Anthony, or send your own mechanic. We have nothing to hide.</p>
+    </div>
+    <div class="how-card">
+      <div class="how-num">04</div>
+      <h3>Pay and drive out</h3>
+      <p>Papers sorted the same day. We deliver if you are outside Lagos.</p>
+    </div>
+  </div>
+</section>
+
+<section id="delivery" class="delivery-section wrap">
+  <div class="delivery-panel">
+    <div class="delivery-copy">
+      <h2>Bought from Abuja? We will bring it to you.</h2>
+      <p>We deliver to all 36 states and the FCT. You get a video walkaround before dispatch and tracking while the car is on the road.</p>
+      <a href="https://wa.me/2348022288837" class="delivery-cta">Ask about delivery</a>
+    </div>
+    <div class="delivery-media">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Truck.car.transporter.arp.750pix.jpg?width=1200" alt="Car transporter truck on the road" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="sell" class="sell-section wrap">
+  <div class="sell-grid">
+    <div class="sell-copy">
+      <h2>Selling or trading in?</h2>
+      <p>Send us photos of your car and we will give you a price the same day. Use the value against anything on our lot, or take the cash.</p>
+      <ul class="sell-list">
+        <li><span class="arrow">→</span>Free valuation, no obligation</li>
+        <li><span class="arrow">→</span>We handle the paperwork transfer</li>
+        <li><span class="arrow">→</span>Payment on the spot once agreed</li>
+      </ul>
+    </div>
+    <form class="sell-form" id="sell-form">
+      <div class="sell-form-title">Get a valuation</div>
+      <input placeholder="Your name" required>
+      <input placeholder="Phone or WhatsApp number" required>
+      <input placeholder="Car, year and mileage" required>
+      <button type="submit">Send details</button>
+      <span class="sell-form-note">We reply within working hours, Mon–Sat.</span>
+    </form>
+  </div>
+</section>
+
+<section class="testimonials-section wrap">
+  <h2 class="section-title">What customers say</h2>
+  <div class="testimonials-grid">
+    <figure class="testimonial">
+      <div class="stars">★★★★★</div>
+      <blockquote>I have done business with them several times. They tell you the truth about the car, good or bad, and the price stays the price.</blockquote>
+      <figcaption>Tunde A. · Lagos</figcaption>
+    </figure>
+    <figure class="testimonial">
+      <div class="stars">★★★★★</div>
+      <blockquote>Bought a Highlander and had it delivered to Port Harcourt in two days. Sent me a video before it left the lot.</blockquote>
+      <figcaption>Ngozi E. · Port Harcourt</figcaption>
+    </figure>
+    <figure class="testimonial">
+      <div class="stars">★★★★★</div>
+      <blockquote>First car, and they were patient with all my questions. The payment plan made it possible for me.</blockquote>
+      <figcaption>Samuel O. · Ikeja</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="faq-section">
+  <h2 class="section-title">Questions we get a lot</h2>
+  <div class="faq-list" id="faq-list"></div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="wrap contact-inner">
+    <div class="contact-copy">
+      <h2>Come and see the cars</h2>
+      <p>Walk in any day except Sunday. No appointment needed, and no pressure to buy.</p>
+      <div class="contact-details">
+        <div><div class="contact-label">Address</div>280 Ikorodu Road, Anthony, Lagos 100007</div>
+        <div><div class="contact-label">Phone / WhatsApp</div><a href="tel:+2348022288837">+234 802 228 8837</a></div>
+        <div><div class="contact-label">Email</div><a href="mailto:ymgautosales@gmail.com">ymgautosales@gmail.com</a></div>
+        <div><div class="contact-label">Opening hours</div>Mon–Fri 8:00–18:30 · Sat 8:00–17:30 · Sun closed</div>
+      </div>
+    </div>
+    <div class="map-frame">
+      <iframe title="YMG Auto Sales on the map" src="https://www.openstreetmap.org/export/embed.html?bbox=3.3520%2C6.5620%2C3.3760%2C6.5790&amp;layer=mapnik&amp;marker=6.5705%2C3.3640" loading="lazy"></iframe>
+    </div>
+  </div>
+  <div class="site-footer">
+    <div class="footer-inner">
+      <span>© 2026 YMG Auto Sales Limited · RC 1536965</span>
+      <span>Demo site · listings, prices and photos are placeholders. Vehicle photos from Wikimedia Commons (CC BY-SA).</span>
+    </div>
+  </div>
+</section>
+
+<div class="wa-bar" id="wa-bar">
+  <span>Found a car you like? Message us and we will hold it for you.</span>
+  <a href="https://wa.me/2348022288837">WhatsApp 0802 228 8837</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
