@@ -112,3 +112,21 @@ mainNav.querySelectorAll("a").forEach((a) => {
 document.getElementById("sell-form").addEventListener("submit", (e) => {
   e.preventDefault();
 });
+
+const heroPlay = document.getElementById("hero-play");
+const heroFull = document.getElementById("hero-full");
+const heroLoop = document.querySelector(".hero-fleet");
+const heroBadge = document.querySelector(".hero-badge");
+
+if (heroPlay && heroFull) {
+  heroPlay.addEventListener("click", () => {
+    heroLoop.pause();
+    heroLoop.hidden = true;
+    heroPlay.hidden = true;
+    // The badge sits bottom-left, where the native controls appear.
+    heroBadge.hidden = true;
+    heroFull.hidden = false;
+    heroFull.play();
+    heroFull.focus();
+  });
+}

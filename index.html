@@ -60,11 +60,24 @@
     <div class="hero-media">
       <div class="hero-media-inner">
         <video class="hero-fleet" poster="assets/hero.jpg"
-               autoplay muted loop playsinline preload="metadata"
-               aria-label="YMG Auto Sales lot, full of cars for sale">
+               autoplay muted loop playsinline preload="metadata" aria-hidden="true">
           <source src="assets/hero.webm" type="video/webm">
           <source src="assets/hero.mp4" type="video/mp4">
         </video>
+        <video class="hero-full" id="hero-full" poster="assets/hero.jpg"
+               playsinline preload="none" controls hidden
+               aria-label="YMG Auto Sales company video">
+          <source src="assets/full.mp4" type="video/mp4">
+        </video>
+        <button class="hero-play" id="hero-play" type="button"
+                aria-label="Play the YMG Auto Sales video with sound">
+          <span class="play-icon" aria-hidden="true">
+            <svg width="13" height="15" viewBox="0 0 13 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.25 6.63a1 1 0 0 1 0 1.74l-10 5.72A1 1 0 0 1 .75 13.2V1.8A1 1 0 0 1 2.25.93l10 5.7Z"/>
+            </svg>
+          </span>
+          Watch the video
+        </button>
         <img src="assets/logo.jpg" alt="YMG Auto Sales" class="hero-badge">
       </div>
     </div>
